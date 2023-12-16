@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+nav > h3 {
+  position: relative;
+}
+
+nav > h3::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}
+
+.page1-overlay {
+  background-color: rgba(0, 0, 0, 0.102);
+}
+
+.page1-heading > h1 {
+  font-size: 14vw;
+  font-weight: 600;
+  color: #fff200;
+}
+
+.page1-btn {
+  position: relative;
+  background-color: #fff;
+  padding: 0.3vw 1vw;
+  border-radius: 3vw;
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.page1-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.page1-footer > h3 {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: #7f7f7f;
+}
+
+.page2 {
+  position: relative;
+  height: 85vh;
+  width: 100%;
+}
+
+.scroller-box {
+  position: relative;
+  gap: 5vw;
+  animation: scroller 35s linear both;
+  flex-shrink: 0;
+}
+
+.scroller-box > img {
+  height: 3vw;
+  filter: grayscale(1);
+  transition: all ease 0.3ss;
+}
+
+.scroller-box > img:hover {
+  filter: grayscale(0);
+}
+
+@keyframes scroller {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.page3-btn > button {
+  position: relative;
+}
+
+.page3-btn > button::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+.page4 {
+  position: relative;
+}
+
+.page4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  background-image: url("https://ey27xp99h3h.exactdn.com/wp-content/uploads/2023/08/bg-banner.jpg?strip=all&lossy=1&webp=85&avif=70&sharp=1&ssl=1");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.page4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 80%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.702);
+  z-index: 1;
+}
+
+.page4-btn {
+  position: relative;
+  background-color: #fff;
+  padding: 0.3vw 1vw;
+  border-radius: 3vw;
+  font-size: 1vw;
+  font-weight: 600;
+  transition: all ease 0.5s;
+}
+
+.page4-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.page4-btn2 > button {
+  position: relative;
+}
+
+.page4-btn2 > button::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.page4 > h1 {
+  color: rgba(209, 213, 219, 0.25);
+}
