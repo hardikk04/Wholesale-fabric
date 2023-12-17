@@ -106,14 +106,14 @@ page4Text.textContent.split("").forEach((text) => {
 });
 
 t1.to(".page4>h1>span", {
-  color: "rgb(209, 213, 219)",
+  color: "rgb(226, 228, 231)",
   stagger: 0.1,
   scrollTrigger: {
     scroller: ".main",
     trigger: ".page4>h1>span",
     start: "top 80%",
     end: "top 20%",
-    markers: true,
+    // markers: true,
     scrub: 1,
   },
 });
