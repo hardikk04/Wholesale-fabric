@@ -166,3 +166,21 @@ nav > h3::after {
 .page4 > h1 {
   color: rgba(209, 213, 219, 0.25);
 }
+
+.page7-text > h1 {
+  color: rgb(190, 193, 198);
+}
+
+.page7-btn > button {
+  position: relative;
+}
+
+.page7-btn > button::after {
+  content: "";
+  position: absolute;
+  bottom: -0%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}

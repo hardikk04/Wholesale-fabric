@@ -117,3 +117,49 @@ t1.to(".page4>h1>span", {
     scrub: 1,
   },
 });
+
+t1.to(".page6>img", {
+  y: -150,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page6>img",
+    start: "top 80%",
+    end: "top 0%",
+    // markers: true,
+    scrub: 0.4,
+  },
+});
+
+const page7Text = document.querySelector(".page7-text>h1");
+
+let clutter3 = "";
+page7Text.textContent.split("").forEach((text) => {
+  clutter3 += `<span>${text}</span>`;
+  page7Text.innerHTML = clutter3;
+});
+
+t1.to(".page7-text>h1>span", {
+  color: "#000",
+  stagger: 0.1,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page7-text>h1>span",
+    start: "top 80%",
+    end: "top 20%",
+    // markers: true,
+    scrub: 1,
+  },
+});
+
+t1.from(".page7-btn", {
+  y: 50,
+  opacity: 0,
+  scrollTrigger: {
+    scroller: ".main",
+    trigger: ".page7-btn",
+    start: "top 80%",
+    end: "top 50%",
+    markers: true,
+    scrub: 1,
+  },
+});
