@@ -159,7 +159,27 @@ t1.from(".page7-btn", {
     trigger: ".page7-btn",
     start: "top 80%",
     end: "top 50%",
-    markers: true,
+    // markers: true,
     scrub: 1,
   },
+});
+
+const page8BtnDiv = document.querySelector(".page8-btn");
+
+page8BtnDiv.addEventListener("mouseenter", () => {
+  gsap.to(".page8-overlay", {
+    opacity: 0,
+  });
+  gsap.to(".page8-icon", {
+    color: "#fff200",
+  });
+});
+
+page8BtnDiv.addEventListener("mouseleave", () => {
+  gsap.to(".page8-overlay", {
+    opacity: 1,
+  });
+  gsap.to(".page8-icon", {
+    color: "#000",
+  });
 });

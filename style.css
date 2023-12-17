@@ -184,3 +184,28 @@ nav > h3::after {
   width: 100%;
   background-color: black;
 }
+
+.page8-btn > button::after {
+  content: "";
+  position: absolute;
+  bottom: -0%;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  background-color: black;
+  transition: all ease 0.5s;
+  overflow: hidden;
+}
+
+.page8-btn > button {
+  transition: all ease 0.5s;
+}
+
+.page8-btn > button:hover::after {
+  left: 98%;
+  background-color: #fff200;
+}
+
+.page8-btn > button:hover {
+  color: #fff200;
+}
