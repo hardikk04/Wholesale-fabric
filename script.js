@@ -183,3 +183,23 @@ page8BtnDiv.addEventListener("mouseleave", () => {
     color: "#000",
   });
 });
+
+const footerH1 = document.querySelectorAll(".page9-names>h1");
+const page9LeftImg = document.querySelector(".page9-left>img");
+const footerImg = [
+  "https://ey27xp99h3h.exactdn.com/wp-content/uploads/2023/08/title-fabrics-1024x683.jpg?strip=all&lossy=1&webp=85&avif=70&sharp=1&ssl=1",
+  "https://ey27xp99h3h.exactdn.com/wp-content/uploads/2023/08/title-sustainability-1024x752.jpg?strip=all&lossy=1&webp=85&avif=70&sharp=1&ssl=1",
+  "https://ey27xp99h3h.exactdn.com/wp-content/uploads/2023/08/title-about-1024x829.jpg?strip=all&lossy=1&webp=85&avif=70&sharp=1&ssl=1",
+];
+
+console.log(footerH1, page9LeftImg);
+
+footerH1.forEach((h1, index) => {
+  h1.addEventListener("mouseenter", () => {
+    page9LeftImg.src = footerImg[index];
+  });
+  h1.addEventListener("mouseleave", () => {
+    page9LeftImg.src =
+      "https://ey27xp99h3h.exactdn.com/wp-content/uploads/2023/08/img-footer-769x1024.jpg?strip=all&lossy=1&webp=85&avif=70&sharp=1&ssl=1";
+  });
+});
